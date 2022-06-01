@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+          <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="btnbuscar">Buscar</button>
+            </form>
+          </div>
+          <div class="col d-flex justify-content-center">
+          <div>
+            <a href="#"><img src="./img/logo tabaquera.png" alt="La Tabaqueria"/></a>
+          </div>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+          <div class="carro">
+            <div class="carro__a">
+              <a href="#"><h3 class="fs-5">CARRITO</h3></a>
+            </div>
+            <div class="login">
+              <a href="#"><h4 class="fs-5">CREAR CUENTA</h4></a>
+              <h4>|</h4>
+              <a href="#"><h4 class="fs-5">INICIAR SESION</h4></a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <hr />
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid justify-content-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown"></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <hr />
+      </header>
+    <main class="container-fluid d-flex justify-content-center">
+        <section class="container">
+            <div class="cat_conteiner">
+                <h3>Categorias:</h3>
+                <ul>
+                    <li>Tabacos</li>
+                    <li>Pipas</li>
+                    <li>Habanos</li>
+                    <li>Armadores</li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="sec_productos">
+            <div class="producto prod_1">
+                <!--producto 1-->
+                <div class="producto__img">
+                    <img src="./img/APACHE-AMERCAN-BLEND-400x400.jpg" class="imagen" alt="">
+                </div>
+                    <h4>Tabaco Apache</h4>
+                
+                    
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
+                
+                <div>
+                    <form action="">
+                        <input type="submit" value="Agregar al Carrito">
+                    </form>
+                </div>
+            </div>
+
+            <div class="producto prod_2">
+                <!--producto 2-->
+                <!--img-->
+                <div class="producto__img">
+                    <img src="./img/LAS-HOJAS-COMUN-400x400.jpg" class="imagen" alt="">
+                </div>
+                    
+                    <h4>Tabaco Las Hojas</h4>
+                
+                
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
+                
+                <div>
+                    <form action="">
+                        <input type="submit" value="Agregar al Carrito">
+                    </form>
+                </div>
+            </div>
+
+            <div class="producto prod_3">
+                <!--producto 3-->
+                <!--img-->
+                <div class="producto__img">
+                    <img src="./img/tabaco-flandria-gold-virginia-venta-online.jpg" class="imagen" alt="">
+                </div>    
+                
+                    <h4>Tabaco Flandria Gold</h4>
+                
+                
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
+                
+                <div>
+                    <form action="">
+                        <input type="submit" value="Agregar al Carrito">
+                    </form>
+                </div>          
+            </div>
+
+            <div class="producto prod_4">
+                <!--producto 4-->
+                <!--img-->
+                <div class="producto__img">    
+                    <img src="./img/VH-MIDDLE-BLEND-400x400.jpg" class="imagen" alt="">
+                </div>
+                    
+                    <h4>Tabaco Van Haasen</h4>
+                
+                
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
+                
+                <div>
+                    <form action="">
+                        <input type="submit" value="Agregar al Carrito">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <hr>
+        <div>    
+            <nav>
+                    <ul>
+                        <li><a href="./index.htm">Inicio</a></li> 
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <!--icono instagram-->
+        <div class="icon__footer">
+            <div>
+                <a href="https://www.instagram.com/farmaciacarnevalefunes/" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt="Instagram"></a>
+            </div>
+            <!--icono Whatsapp-->
+            <div>
+                <a href="https://wa.me/3413086007" target="_blank" rel="noopener noreferrer"><img src="./img/iconwhapp.png" alt="Whatsapp"></a>
+            </div>
+            <!--icono ubicacion-->
+            <div>
+                <a href="https://goo.gl/maps/d126CWXABhVRoeUU8" target="_blank" rel="noopener noreferrer"><img src="./img/google-maps.png" alt="Ubicacion"></a>          
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+</body>
+
+</html>
