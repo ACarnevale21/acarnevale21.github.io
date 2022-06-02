@@ -177,7 +177,7 @@ nav ul li a {
 .producto {
     display: block;
     margin: 3rem;
-    padding: 0.3rem;
+    padding: 0.4rem;
     width: 15rem;
     background-color: #f5f4f0;
     /*border radius*/
@@ -193,7 +193,9 @@ nav ul li a {
     padding: 0.1rem;
     margin: 0.2rem;
 }
-
+.producto p {
+    text-align: center;
+}
 /*SECCION FAQ*/
 
 /*SECCION CONTACTO*/
@@ -209,16 +211,6 @@ nav ul li a {
 }
 .form_contact{
     grid-area: contacto;
-}
-.formcont{
-    margin: 0.3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-}
-form {
-
     margin: 0 auto;
     width: 18.75rem;
     padding: 10px;
@@ -227,6 +219,14 @@ form {
     border: 2px solid rgb(99, 99, 99);
     border-radius: 4px; 
 }
+.formcont{
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
 .labelform{
     margin: 10px 10px 10px 10px;
 }

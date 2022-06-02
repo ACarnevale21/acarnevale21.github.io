@@ -81,21 +81,21 @@
         </nav>
         <hr />
       </header>
-    <main class="container-fluid d-flex justify-content-center">
-        <section class="container">
-            <div class="cat_conteiner">
-                <h3>Categorias:</h3>
-                <ul>
-                    <li>Tabacos</li>
-                    <li>Pipas</li>
-                    <li>Habanos</li>
-                    <li>Armadores</li>
-                </ul>
-
-            </div>
-        </section>
+    <main class="container-fluid ">
+      <section class="container">
+          <h3>Categorias:</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              Tabacos
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Pipas</a>
+            <a href="#" class="list-group-item list-group-item-action">Habanos</a>
+            <a href="#" class="list-group-item list-group-item-action">Armadores</a>
+          </div>
+    </section>
+            
         <section class="sec_productos">
-            <div class="producto prod_1">
+            <div class="producto border-1 d-flex flex-column align-items-center">
                 <!--producto 1-->
                 <div class="producto__img">
                     <img src="./img/APACHE-AMERCAN-BLEND-400x400.jpg" class="imagen" alt="">
@@ -105,14 +105,14 @@
                     
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
                 
-                <div>
-                    <form action="">
+                
+                    <form class="align-self-center" id="form__prod">
                         <input type="submit" value="Agregar al Carrito">
                     </form>
-                </div>
+                
             </div>
 
-            <div class="producto prod_2">
+            <div class="producto border-1 d-flex flex-column align-items-center">
                 <!--producto 2-->
                 <!--img-->
                 <div class="producto__img">
@@ -126,12 +126,12 @@
                 
                 <div>
                     <form action="">
-                        <input type="submit" value="Agregar al Carrito">
+                        <input type="submit" class="btn btn-light" value="Agregar al Carrito">
                     </form>
                 </div>
             </div>
 
-            <div class="producto prod_3">
+            <div class="producto border-1 d-flex flex-column align-items-center">
                 <!--producto 3-->
                 <!--img-->
                 <div class="producto__img">
@@ -150,7 +150,7 @@
                 </div>          
             </div>
 
-            <div class="producto prod_4">
+            <div class="producto border-1 d-flex flex-column align-items-center">
                 <!--producto 4-->
                 <!--img-->
                 <div class="producto__img">    
