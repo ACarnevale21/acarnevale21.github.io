@@ -51,10 +51,82 @@ nav ul li a {
 /*MAIN*/
 
 .main {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: 30rem 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+} 
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 37rem;
+    /* background-color: #d5cbc6; */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    -webkit-box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.75);
+    
+}
+.banner h1 {
+    color: #383838;
+    margin-bottom: 1rem;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 130px;
+    font-weight: 500;
+    -webkit-animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.banner p {
+   color: #383838;
+   font-family: 'Tiro Devanagari Sanskrit', serif;
+   font-size: 50px;
+   text-align: center;
+}
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
 /* CARTAS INDEX */
 .card {
     display: block;
@@ -165,7 +237,15 @@ nav ul li a {
     align-items: center;
     padding: 0.3rem;
     margin: 1rem;
-    background-color: rgba(179, 169, 169, 0.41);
+    background-color: transparent;
+    border: 2px solid #383838;
+    border-radius: 10px;
+    -webkit-box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.nosotros p {
+    text-align: center;
 }
 
 
@@ -199,31 +279,20 @@ nav ul li a {
 /*SECCION FAQ*/
 
 /*SECCION CONTACTO*/
-.contacto{
-    display: grid;
-    grid-template-columns: 15% auto auto 15%;
-    grid-template-rows: auto;
-    grid-template-areas: ". imagencont contacto .";
-    margin: 0.3rem;
-}
-.img_contact{
-    grid-area: imagencont;
-}
+
 .form_contact{
-    grid-area: contacto;
-    margin: 0 auto;
-    width: 18.75rem;
-    padding: 10px;
+    width: auto;
     background-color: white;
     color:  rgb(99, 99, 99); 
     border: 2px solid rgb(99, 99, 99);
     border-radius: 4px; 
 }
 .formcont{
+    /* width: 30rem; */
     margin: 0.3rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
 }
 
@@ -244,14 +313,17 @@ input, textarea{
 .field:focus{
     border-color: rgb(99, 99, 99);
 }
+.imagen {
+    max-width: 100%;
+    max-height: 100%;
+}
 
-@media screen and (min-width: 375px) and (max-width: 500px){
+/* @media screen and (min-width: 375px) and (max-width: 500px){
     /*INDEX*/
     .suphead {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
     }
     nav ul{
         flex-wrap: wrap;
@@ -296,4 +368,4 @@ input, textarea{
 
     }
 
-}
+} 
