@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <header>
-    <div class="row">
+  <header class="container-fluid">
+    <div class="row suphead">
       <div class="col d-flex justify-content-center align-items-center">
       <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -88,21 +88,19 @@
     </nav>
     <hr />
   </header>
-    <main class="container-fluid ">
-      <section class="container">
+    <main class="productos_all container-fluid ">
+      <section class="categoria__contenedor ">
           <h3>Categorias:</h3>
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-              Tabacos
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">Pipas</a>
-            <a href="#" class="list-group-item list-group-item-action">Habanos</a>
-            <a href="#" class="list-group-item list-group-item-action">Armadores</a>
+          <div class="list_categorias">
+            <a href="#" class="">Tabacos</a>
+            <a href="#" class="">Pipas</a>
+            <a href="#" class="">Habanos</a>
+            <a href="#" class="">Armadores</a>
           </div>
     </section>
             
-        <section class="container d-flex ">
-            <div class="producto border-1 d-flex flex-column align-items-center">
+        <section class="producto_contenedor container" id="contenedor--producto">
+            <div class="producto border-1 ">
                 <!--producto 1-->
                 <div class="producto__img">
                     <img src="./img/APACHE-AMERCAN-BLEND-400x400.jpg" class="imagen" alt="">
@@ -119,7 +117,7 @@
                 
             </div>
 
-            <div class="producto border-1 d-flex flex-column align-items-center">
+            <div class="producto border-1 ">
                 <!--producto 2-->
                 <!--img-->
                 <div class="producto__img">
@@ -138,7 +136,7 @@
                 </div>
             </div>
 
-            <div class="producto border-1 d-flex flex-column align-items-center">
+            <div class="producto border-1">
                 <!--producto 3-->
                 <!--img-->
                 <div class="producto__img">
@@ -148,16 +146,16 @@
                     <h4>Tabaco Flandria Gold</h4>
                 
                 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumelit assumenda.</p>            
                 
-                <div>
+                <div class="carrito_btn">
                     <form action="">
                         <input type="submit" value="Agregar al Carrito">
                     </form>
                 </div>          
             </div>
 
-            <div class="producto border-1 d-flex flex-column align-items-center">
+            <div class="producto border-1 ">
                 <!--producto 4-->
                 <!--img-->
                 <div class="producto__img">    
@@ -314,7 +312,9 @@
     </div>
   </div>
 </div>
+    <!-- MODAL -->
 
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>

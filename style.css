@@ -1,8 +1,13 @@
 * {
     font-family: 'Roboto', sans-serif;
 
+
+}
+header{
+    margin: 1rem;
 }
 .suphead {
+    margin-top: 1rem;
     display: flex;
     align-items:center;
     justify-content: space-around;
@@ -83,7 +88,7 @@ nav ul li a {
     color: #383838;
     margin-bottom: 1rem;
     font-family: 'Tiro Devanagari Sanskrit', serif;
-    font-size: 130px;
+    font-size: 8.125rem;
     font-weight: 500;
     -webkit-animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -92,7 +97,7 @@ nav ul li a {
 .banner p {
    color: #383838;
    font-family: 'Tiro Devanagari Sanskrit', serif;
-   font-size: 50px;
+   font-size: 3.125rem;
    text-align: center;
 }
 
@@ -231,6 +236,12 @@ nav ul li a {
 }
 
 /* SECCION NOSOTROS*/
+.cont_nosotros{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
 .nosotros{
     display: flex;
     flex-direction: column;
@@ -251,12 +262,49 @@ nav ul li a {
 
 
 /*SECCION PRODUCTOS*/
+.productos_all{
+    display: flex;
+    justify-content: center
+}
+.categoria_contenedor{
+    width: 20rem;
+}
+.list_categorias{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 20rem;
 
+}
+.list_categorias a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 5px solid #d9ccd9;
+} 
+.list_categorias a:hover{
+    -webkit-box-shadow: 4px 4px 19px -4px rgba(0,0,0,0.55);
+    -moz-box-shadow: 4px 4px 19px -4px rgba(0,0,0,0.55);
+    box-shadow: 4px 4px 19px -4px rgba(0,0,0,0.55);
+    color: #383838;
 
+}
+.producto_contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
 .producto {
-    display: block;
-    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    margin: 1rem auto 1rem 1rem;
     padding: 0.4rem;
     width: 15rem;
     background-color: #f5f4f0;
@@ -268,11 +316,22 @@ nav ul li a {
 
 }
 
-.producto .producto__img {
+ .producto__img {
     align-self: center;
     padding: 0.1rem;
     margin: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.producto__img img{
+    border-radius: 10px;
+}
+.producto h4 {
+    font-size: 1.25rem;
+    padding: 0.65rem;
+}
+
 .producto p {
     text-align: center;
 }
@@ -318,10 +377,11 @@ input, textarea{
     max-height: 100%;
 }
 
-/* @media screen and (min-width: 375px) and (max-width: 500px){
+@media screen and (min-width: 375px) and (max-width: 546px){
     /*INDEX*/
     .suphead {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -336,6 +396,44 @@ input, textarea{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    /* cambios para el banner index*/
+    .banner{
+        height: 25rem;
+    }
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+    .banner p {
+       font-size: 1.25rem;
+    }
+    .banner img{
+        max-width: 50%;
+        max-height: 50%;
+    }
+    /* fin banner index */
+
+    /* cambios cards index */
+    .card {
+        display: block;
+        padding: 1rem;
+        margin: 0.3rem;
+        border: grey solid 2px;
+        transition: all .3s ease-in-out;
+        
+        
+    }
+    .card:hover{
+        transform: scale(1.01);
+        -webkit-box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.75);
+        box-shadow: 11px 10px 16px 0px rgba(0,0,0,0.75);
+        z-index: 2;
+    }
+    /* fin cambios card index */
+    .cont_nosotros{
+        display: flex;
+        flex-direction: column;
     }
     .imagen {
         max-width: 100%;
