@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,36 +26,35 @@
   <body>
 
     <header>
-      <div class="row suphead">
-        <div class="col d-flex justify-content-center align-items-center">
+      <div class="suphead">
+        <div class="suphead-search">
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit" id="btnbuscar">Buscar</button>
           </form>
         </div>
-        <div class="col d-flex justify-content-center">
+        <div class="suphead-logo">
         <div>
-          <a href="#"><img src="./img/logo tabaquera.png" alt="La Tabaqueria"/></a>
+          <a href="./index.html"><img src="./img/logo tabaquera.png" alt="La Tabaqueria"/></a>
         </div>
         </div>
-        <div class="col d-flex justify-content-center align-items-center">
-        <div class="carro">
-          <div class="">
-            <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCarrito">
-              Carrito
-            </button>
-            
+        <div class="suphead-login">
+          <div class="carro">
+              <div class="carro-carrito">
+                <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                  Carrito
+                </button>
+              </div>
+              <div class="login">
+                <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCrearCuenta">
+                  Crear Cuenta
+                </button>
+                
+                <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">
+                  Iniciar Sesion
+                </button>
+              </div>
           </div>
-          <div class="login">
-            <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCrearCuenta">
-              Crear Cuenta
-            </button>
-            <h4>|</h4>
-            <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">
-              Iniciar Sesion
-            </button>
-          </div>
-        </div>
         </div>
       </div>
       <hr />
@@ -147,73 +146,98 @@
         <h3>+Sumate</h3>
       </div>
 
-      <div class="container d-flex justify-content-center flex-column align-items-center">
+      
+      <div class="contacto-index container">
         <h2>Contactate con nosotros!</h2>
-        <div class="container form_contact"> <!--Formulario de consulta-->
-          <form action="" method="get" enctype="text/plain" class="formcont">
-              
-                      <label for="idNombre" class="labelform">Nombre</label>
-                      <input type="text" name="idNombre" id="" class="field">
+        <div class="contacto-gral">
+              <div class="contacto-info">
+                <p>Horarios de atención: Lunes a Viernes de 10 a 20 horas. Sábados de 12 a 20 horas. Domingos cerrado.</p>
+                <a href="https://wa.me/3413086007"><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                  </svg>
+                </span> Whatsapp</a>
+                <a href="mailto:latabaqueria@gmail.com.ar"><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <polyline points="3 7 12 13 21 7" />
+                  </svg>
+                </span> latabaqueria@gmail.com</a>
+              </div>
+          <!--Formulario de consulta-->
+            <div class="form-contacto"> 
+              <form action="" method="get" enctype="text/plain" class="formcont">
+                  
+                          <label for="idNombre" class="labelform">Nombre</label>
+                          <input type="text" name="idNombre" id="" class="field">
 
-                      <label for="idEmail" class="labelform" >E-mail</label>   
-                      <input type="email" name="idEmail" id="" class="field">
+                          <label for="idEmail" class="labelform" >E-mail</label>   
+                          <input type="email" name="idEmail" id="" class="field">
 
-                      <label for="idTelefono" class="labelform">Telefono</label>      
-                      <input type="tel" name="idTelefono" id="" class="field">
+                          <label for="idTelefono" class="labelform">Telefono</label>      
+                          <input type="tel" name="idTelefono" id="" class="field">
 
-                      <label for="idMensaje"class="labelform">Mensaje</label>  
-                      <textarea name="idMensaje" id="" cols="30" rows="5" class="field"></textarea>
+                          <label for="idMensaje"class="labelform">Mensaje</label>  
+                          <textarea name="idMensaje" id="" cols="30" rows="5" class="field"></textarea>
 
-              <input type="submit" value="Enviar Consulta" class="field btn">
-          </form>
-      </div>
+                          <input type="submit" value="Enviar Consulta" class="field btn">
+              </form>
+            </div>
+        </div>
       </div>
 
     </main>
+
+    <hr>
     <footer>
-      <hr />
-      <div>
-        <nav>
-          <ul>
-            <li><a href="./index.htm">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!--icono instagram-->
-      <div class="icon__footer">
-        <div>
-          <a
-            href="https://www.instagram.com/farmaciacarnevalefunes/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./img/instagram.png" alt="Instagram"
-          /></a>
+      <div class="footer-contenedor">
+        <div class="footer-nav">
+          <h5>NAVEGACION</h5>
+          <a href="./nosotros.html">Nosotros</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./contacto.html">Contacto</a>
         </div>
-        <!--icono Whatsapp-->
-        <div>
-          <a
-            href="https://wa.me/3413086007"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./img/iconwhapp.png" alt="Whatsapp"
-          /></a>
+        <div class="footer-ubi">
+          <h5>CONTACTANOS</h5>
+          <a href="https://wa.me/3413086007"><span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg>
+          </span> Whatsapp</a>
+          <a href="mailto:latabaqueria@gmail.com.ar"><span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <polyline points="3 7 12 13 21 7" />
+            </svg>
+          </span> latabaqueria@gmail.com</a>
         </div>
-        <!--icono ubicacion-->
-        <div>
-          <a
-            href="https://goo.gl/maps/d126CWXABhVRoeUU8"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./img/google-maps.png" alt="Ubicacion"
-          /></a>
+        <div class="footer-social">
+          <div>
+            <h5>REDES SOCIALES</h5>
+            <div>
+              <!-- icono whap -->
+              <a
+              href="https://wa.me/3413086007"
+              target="_blank"
+              rel="noopener noreferrer"><img src="./img/iconwhapp.png" alt="Whatsapp"/> </a>
+              <!-- icono ubicacion -->
+              <a
+              href="https://goo.gl/maps/d126CWXABhVRoeUU8"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./img/google-maps.png" alt="Ubicacion"
+            /></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-    
 
 
 <!-- Modal carrito-->

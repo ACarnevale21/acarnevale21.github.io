@@ -1,0 +1,265 @@
+/*Import reset*/
+* {
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  margin: 1rem; }
+
+.suphead {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.carro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.1rem; }
+
+.suphead-logo {
+  margin: 0.6rem; }
+
+.carro-carrito {
+  margin: 0.3rem; }
+  .carro-carrito button {
+    margin: auto auto;
+    text-decoration: none;
+    color: #636363; }
+
+#btnbuscar:hover {
+  background-color: transparent;
+  color: black; }
+
+.login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .login button {
+    margin: 0.3rem;
+    text-decoration: none;
+    color: #636363; }
+
+/*NAV BAR*/
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  nav ul li {
+    list-style: none; }
+    nav ul li a {
+      text-decoration: none; }
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: rgba(23, 23, 23, 0.998);
+  color: white;
+  height: 12rem; }
+
+.footer-nav, .footer-ubi, .footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 1rem; }
+  .footer-nav h5, .footer-ubi h5, .footer-social h5 {
+    font-weight: 800; }
+  .footer-nav a, .footer-ubi a, .footer-social a {
+    text-decoration: none;
+    color: white; }
+  .footer-nav a:hover, .footer-ubi a:hover, .footer-social a:hover {
+    text-decoration: underline;
+    color: white; }
+
+/*INDEX MAIN*/
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.slide-fwd-center {
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 37rem;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 5px outset #000000;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem; }
+
+.banner h1 {
+  color: #383838;
+  margin-bottom: 1rem;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  font-size: 8.125rem;
+  font-weight: 500;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+.banner p {
+  color: #383838;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  font-size: 3.125rem;
+  text-align: center; }
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+/* CARTAS INDEX */
+.card {
+  display: block;
+  padding: 1rem;
+  margin: 0.3rem;
+  border: grey solid 2px;
+  transition: all .3s ease-in-out; }
+
+.card:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: 11px 10px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 10px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 10px 16px 0px rgba(0, 0, 0, 0.75);
+  z-index: 2; }
+
+#card__tabacos {
+  background-image: url(../../img/tabacos.jpg);
+  width: 31.25rem;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#card__acc {
+  background-image: url(../../img/FUMAR-CIGARRILLOS-TABACO-ARMADO-9-75001_600x315.jpg);
+  width: 31.25rem;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#card__habanos {
+  background-image: url(../../img/cubano.jpg);
+  width: 31.25rem;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+#card__pipas {
+  background-image: url(../../img/pipa_card.jpeg);
+  width: 31.25rem;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#card__armadores {
+  background-image: url(../../img/550px-nowatermark-Roll-a-Cigarette-With-a-Cigarette-Roller-Step-3-Version-4.jpg);
+  width: 31.25rem;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#card__news {
+  background-image: url(../../img/cubano2.jpg);
+  width: 31.25rem;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.card h3:hover {
+  opacity: 1; }
+
+.card h2 {
+  align-self: center;
+  color: white;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  -webkit-text-stroke: 1px rgba(136, 130, 130, 0.507);
+  font-weight: 600; }
+
+.card h3 {
+  align-self: center;
+  display: block;
+  text-align: center;
+  background-color: rgba(235, 235, 235, 0.781);
+  border-radius: 3px;
+  width: 150px;
+  z-index: 2;
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+.contacto-index {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem; }
+  .contacto-index h2 {
+    margin: 1rem; }
+
+.contacto-gral {
+  background-color: rgba(0, 0, 0, 0.266);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.65rem; }
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem; }
+  .contacto-info a {
+    text-decoration: none;
+    color: black; }
+  .contacto-info a:hover {
+    text-decoration: underline;
+    color: white; }
+
+.form-contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 2px outset #636363;
+  border-radius: 10px; }
+  .form-contacto form label {
+    color: #151515;
+    font-weight: 600; }
