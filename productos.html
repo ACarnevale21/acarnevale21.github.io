@@ -5,44 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/main.css">
     <title>Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <header class="container-fluid">
-    <div class="row suphead">
-      <div class="col d-flex justify-content-center align-items-center">
+  <header>
+    <div class="suphead">
+      <div class="suphead-search">
       <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit" id="btnbuscar">Buscar</button>
         </form>
       </div>
-      <div class="col d-flex justify-content-center">
+      <div class="suphead-logo">
       <div>
-        <a href="#"><img src="./img/logo tabaquera.png" alt="La Tabaqueria"/></a>
+        <a href="./index.html"><img src="./img/logo tabaquera.png" alt="La Tabaqueria"/></a>
       </div>
       </div>
-      <div class="col d-flex justify-content-center align-items-center">
-      <div class="carro">
-        <div class="">
-          <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCarrito">
-            Carrito
-          </button>
-          
+      <div class="suphead-login">
+        <div class="carro">
+            <div class="carro-carrito">
+              <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                Carrito
+              </button>
+            </div>
+            <div class="login">
+              <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCrearCuenta">
+                Crear Cuenta
+              </button>
+              
+              <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">
+                Iniciar Sesion
+              </button>
+            </div>
         </div>
-        <div class="login">
-          <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalCrearCuenta">
-            Crear Cuenta
-          </button>
-          <h4>|</h4>
-          <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">
-            Iniciar Sesion
-          </button>
-        </div>
-      </div>
       </div>
     </div>
     <hr />
@@ -111,9 +110,9 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
                 
                 
-                    <form class="align-self-center" id="form__prod">
-                        <input type="submit" value="Agregar al Carrito">
-                    </form>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarCarrito">
+                      Agregar al Carrito
+                    </button>
                 
             </div>
 
@@ -130,9 +129,9 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
                 
                 <div>
-                    <form action="">
-                        <input type="submit" class="btn btn-light" value="Agregar al Carrito">
-                    </form>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarCarrito">
+                    Agregar al Carrito
+                  </button>
                 </div>
             </div>
 
@@ -149,9 +148,9 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumelit assumenda.</p>            
                 
                 <div class="carrito_btn">
-                    <form action="">
-                        <input type="submit" value="Agregar al Carrito">
-                    </form>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarCarrito">
+                    Agregar al Carrito
+                  </button>
                 </div>          
             </div>
 
@@ -168,42 +167,89 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste eaque optio, velit assumenda.</p>            
                 
                 <div>
-                    <form action="">
-                        <input type="submit" value="Agregar al Carrito">
-                    </form>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarCarrito">
+                    Agregar al Carrito
+                  </button>
                 </div>
             </div>
         </section>
 
     </main>
     <footer>
-        <hr>
-        <div>    
-            <nav>
-                    <ul>
-                        <li><a href="./index.htm">Inicio</a></li> 
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                    </ul>
-            </nav>
+      <div class="footer-contenedor">
+        <div class="footer-nav">
+          <h5>NAVEGACION</h5>
+          <a href="./nosotros.html">Nosotros</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./contacto.html">Contacto</a>
         </div>
-        <!--icono instagram-->
-        <div class="icon__footer">
-            <div>
-                <a href="https://www.instagram.com/farmaciacarnevalefunes/" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt="Instagram"></a>
-            </div>
-            <!--icono Whatsapp-->
-            <div>
-                <a href="https://wa.me/3413086007" target="_blank" rel="noopener noreferrer"><img src="./img/iconwhapp.png" alt="Whatsapp"></a>
-            </div>
-            <!--icono ubicacion-->
-            <div>
-                <a href="https://goo.gl/maps/d126CWXABhVRoeUU8" target="_blank" rel="noopener noreferrer"><img src="./img/google-maps.png" alt="Ubicacion"></a>          
-            </div>
+        <div class="footer-ubi">
+          <h5>CONTACTANOS</h5>
+          <a href="https://wa.me/3413086007"><span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg>
+          </span> Whatsapp</a>
+          <a href="mailto:latabaqueria@gmail.com.ar"><span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <polyline points="3 7 12 13 21 7" />
+            </svg>
+          </span> latabaqueria@gmail.com</a>
         </div>
+        <div class="footer-icons">
+          <div>
+            <h5>REDES SOCIALES</h5>
+            <div>
+              <!-- icono whap -->
+              <a
+              href="https://wa.me/3413086007"
+              target="_blank"
+              rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+              </svg></a>
+              <!-- icono ubicacion -->
+              <a
+              href="https://goo.gl/maps/d126CWXABhVRoeUU8"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="18" y1="6" x2="18" y2="6.01" />
+                <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                <line x1="9" y1="4" x2="9" y2="17" />
+                <line x1="15" y1="15" x2="15" y2="20" />
+              </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+        <!-- MODAL AGREGAR AL CARRITO -->
+        <!-- Modal -->
+<div class="modal fade" id="agregarCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Articulo no disponible</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        No hay stock
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Modal carrito-->
 <div class="modal fade" id="modalCarrito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
