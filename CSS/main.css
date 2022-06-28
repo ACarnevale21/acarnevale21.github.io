@@ -257,7 +257,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem;
+  padding: 0.65rem;
   border: 2px outset #636363;
   border-radius: 10px; }
   .form-contacto form label {
@@ -456,6 +456,8 @@ input, textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+  .contacto {
+    margin: 1rem; }
   .productos_all {
     display: flex;
     flex-direction: row;
