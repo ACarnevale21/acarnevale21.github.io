@@ -82,15 +82,28 @@
     }
     .contacto{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
 
     }
     //CONTACTO QUERIES
     .contacto{
         margin: 1rem;
+        flex-direction: column;
+        align-items: center;
     }
+    //seccion contacto
+    // .formcont{
+    //     max-width: 100%;
 
+    // }
+    .form_contact{
+        width: 100%;
+        margin: 1rem;
+
+    }
+    
     //PRODUCTOS QUERIES
     .productos_all{
         display: flex;

@@ -1,13 +1,20 @@
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .form_contact{
-    width: auto;
+    width: 50%;
+    margin: 2rem;
     background-color: white;
     color:  rgb(99, 99, 99); 
     border: 2px solid rgb(99, 99, 99);
     border-radius: 4px; 
 }
 .formcont{
-    /* width: 30rem; */
-    margin: 0.3rem;
+    
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,10 +34,12 @@ input, textarea{
     border-radius: 4px;
     padding: 7px;
     width: 17rem;
+   
 }
 .field:focus{
-    border-color: rgb(99, 99, 99);
+    border-color: rgb(121, 119, 119);
 }
+
 .imagen {
     max-width: 100%;
     max-height: 100%;

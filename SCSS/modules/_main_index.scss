@@ -100,6 +100,7 @@
     width: 31.25rem;
     height: 18.75rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     
@@ -109,6 +110,7 @@
     width: 31.25rem;
     height: 18.75rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -117,6 +119,7 @@
     width: 31.25rem;
     height: 18.75rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -127,6 +130,7 @@
     width: 31.25rem;
     height: 18.75rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -135,6 +139,7 @@
     width: 31.25rem;
     height: 18.75rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -143,6 +148,7 @@
     width: 31.25rem;
     height: 18.75rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -157,7 +163,10 @@
     -webkit-text-stroke: 1px rgba(136, 130, 130, 0.507);
     font-weight: 600;
 }
-.card h3{
+.card a{
+    text-decoration: none;
+}
+.card a h3{
     align-self: center;
     display: block;
     text-align: center;
